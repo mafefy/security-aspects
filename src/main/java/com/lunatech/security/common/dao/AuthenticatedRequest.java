@@ -1,9 +1,9 @@
 package com.lunatech.security.common.dao;
 
 
-import com.lunatech.security.common.model.Request;
-import com.lunatech.security.authorization.AuthorizationStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.lunatech.security.authorization.AuthorizationStatus;
+import com.lunatech.security.common.model.Request;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

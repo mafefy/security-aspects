@@ -1,6 +1,5 @@
 package com.lunatech.security.blocking.dao;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 
 import com.lunatech.security.common.dao.CommonEntity;

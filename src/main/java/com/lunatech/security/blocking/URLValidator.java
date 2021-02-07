@@ -6,6 +6,7 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.URL;
 import java.net.UnknownHostException;
+
 import com.google.common.net.InetAddresses;
 
 public class URLValidator {

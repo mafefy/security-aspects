@@ -3,8 +3,8 @@ package com.lunatech.security.common.error;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.lunatech.security.blocking.Violations;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.lunatech.security.blocking.Violations;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -15,6 +15,10 @@ import lombok.EqualsAndHashCode;
 @ResponseStatus(code = HttpStatus.INTERNAL_SERVER_ERROR)
 public class AppError extends RuntimeException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1343434L;
 	private Integer code;
 	private String message;
 	private String details;

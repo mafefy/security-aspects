@@ -1,7 +1,7 @@
 package com.lunatech.security.common.error;
 
-import com.lunatech.security.blocking.Violations;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.lunatech.security.blocking.Violations;
 
 import lombok.Data;
 

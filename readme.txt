@@ -1,6 +1,7 @@
 this library provide security features out of the box for your spring  boot application
 using aspect programming
 
+
 in you spring boot main class add these to enable the features
 
 @EnableScheduling
@@ -45,5 +46,27 @@ UserRole:
 
 specificy which user allowed to enter this function based on his token payload user will be allowed or rejected
 
+
+Configure the library :
+
+AuthorizationService.configure("encryption key here",200000000L,  Arrays.asList("system 1", "system 2"));
+
+this system is named: current system name 
+allowed system to connect to this one : "system 1" ,  "system 2"  if set to null mean any system can connect
+
+
+
+to install the libarary as maven local repository :
+
+mvn install:install-file -Dfile=security-aspects-0.0.1.jar -DgroupId=com.lunatech -DartifactId=security-aspects -Dversion=1.0.0 -Dpackaging=jar  -DgeneratePom=true
+
+
+and you can reference it from any project
+
+<dependency>	
+	<groupId>com.lunatech</groupId>
+	<artifactId>security-aspects</artifactId>
+	<version>1.0.0</version>
+</dependency>
 
 
